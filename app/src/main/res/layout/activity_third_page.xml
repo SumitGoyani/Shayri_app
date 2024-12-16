@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.85"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/line1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/thirdimg1"
+            android:src="@mipmap/ic_launcher">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/index"
+            android:layout_weight="0.8"
+            android:text=""
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold">
+
+        </TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/thirdimg2"
+            android:src="@mipmap/ic_launcher">
+
+        </ImageView>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/shayri"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#EC1F64"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_below="@id/line1"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#12B119"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/copyicon"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_content_copy_24"
+            android:layout_margin="13dp"
+            >
+
+        </ImageView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/backbutton"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_navigate_before_24"
+            android:layout_margin="7dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/thirdimg3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:src="@mipmap/ic_launcher"></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nextbutton"
+            android:layout_weight="1"
+            android:src="@drawable/navigate_next_24"
+            android:layout_margin="7dp"
+            >
+
+        </ImageView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/shareicon"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_share_24"
+            android:layout_margin="13dp">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</RelativeLayout>
